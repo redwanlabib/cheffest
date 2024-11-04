@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tailwincss Projecet</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  </head>
+  <body class="dark dark:bg-black">
+    <nav
+      class="py-4 absolute top-0 left-0 z-10 w-full pt-[94px] bg-transparent md:pt-4 md:bg-slate-50 md:dark:bg-black"
+    >
+      <div class="container">
+        <div class="grid grid-cols-[auto_1fr] md:grid-cols-[auto_1fr_auto]">
+          <a
+            href=""
+            class="absolute md:relative top-2 left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 w-[60px] h-[60px] md:w-[100px] h-[94px]"
+          >
+            <img src="./image/Logo.svg" alt="logo" />
+          </a>
+          <span type="button" class="text-white cursor-pointer md:hidden">
+            <i class="text-[25px] fa-solid fa-bars"></i>
+          </span>
+          <ul class="hidden md:flex gap-[6px] justify-center items-center">
+            <li class="">
+              <a
+                class="py-4 px-[18px] capitalize text-xl dark:text-white text-black leading-tight"
+                href="#"
+                >Welcome</a
+              >
+            </li>
+            <li>
+              <a
+                class="py-4 px-[18px] capitalize text-xl dark:text-white text-black leading-tight"
+                href="#"
+                >Our Menu</a
+              >
+            </li>
+            <li>
+              <a
+                class="py-4 px-[18px] capitalize text-xl dark:text-white text-black leading-tight"
+                href="#"
+                >Franchise</a
+              >
+            </li>
+            <li>
+              <a
+                class="py-4 px-[18px] capitalize text-xl dark:text-white text-black leading-tight"
+                href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="flex gap-[16px] items-center justify-end">
+            <button class="p-1 w-8 h-8 rounded-full bg-transparent relative">
+              <span
+                class="absolute w-4 h-4 bg-[#FF0000] text-white rounded-full text-[8px] flex justify-center items-center top-[2px] left-[22px]"
+                >2</span
+              >
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.7436 33.9999C23.1445 33.9999 24.2802 32.8159 24.2802 31.3554C24.2802 29.8949 23.1445 28.7109 21.7436 28.7109C20.3427 28.7109 19.207 29.8949 19.207 31.3554C19.207 32.8159 20.3427 33.9999 21.7436 33.9999Z"
+                  fill="white"
+                />
+                <path
+                  d="M10.146 33.9999C11.5469 33.9999 12.6825 32.8159 12.6825 31.3554C12.6825 29.8949 11.5469 28.7109 10.146 28.7109C8.74504 28.7109 7.60938 29.8949 7.60938 31.3554C7.60938 32.8159 8.74504 33.9999 10.146 33.9999Z"
+                  fill="white"
+                />
+                <path
+                  d="M5.20361 5.95407L4.91371 9.65631C4.85573 10.3665 5.39204 10.9559 6.07329 10.9559H28.2647C28.8735 10.9559 29.3808 10.4723 29.4243 9.83765C29.6127 7.16296 27.6559 4.98695 25.0904 4.98695H7.27635C7.13141 4.32206 6.84151 3.68739 6.39218 3.1585C5.66744 2.35761 4.65281 1.88916 3.60919 1.88916H1.0871C0.492821 1.88916 0 2.40294 0 3.0225C0 3.64206 0.492821 4.15584 1.0871 4.15584H3.60919C4.05852 4.15584 4.47887 4.35228 4.78326 4.68473C5.08765 5.03229 5.2326 5.48562 5.20361 5.95407Z"
+                  fill="white"
+                />
+                <path
+                  d="M27.9192 13.2227H5.68424C5.07546 13.2227 4.58264 13.7062 4.52466 14.3258L4.00285 20.8991C3.79993 23.4832 5.74222 25.6894 8.22082 25.6894H24.339C26.5132 25.6894 28.4265 23.8307 28.5859 21.564L29.0642 14.5071C29.1222 13.812 28.6004 13.2227 27.9192 13.2227Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+            <button class="p-1 w-8 h-8 rounded-full bg-transparent hidden md:inline-block">
+              <svg
+                width="33"
+                height="34"
+                viewBox="0 0 33 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"> <path d="M15.4583 29.7502C22.8912 29.7502 28.9167 23.7247 28.9167 16.2918C28.9167 8.859 22.8912 2.8335 15.4583 2.8335C8.0255 2.8335 2 8.859 2 16.2918C2 23.7247 8.0255 29.7502 15.4583 29.7502Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/> <path d="M30.3333 31.1668L27.5 28.3335" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===================================
+              Bannar Section Start
+     ======================================= -->
+    <main>
+      <section class="pt-[200px] pb-[75px] lg:pb-[246px] bg-white bg-hero-image bg-no-repeat bg-cover bg-center hero_after">
+        <div class="container">
+          <div class="w-full md:w-[652px] bennar_text">
+            <h1 class="">
+              <span class="block">Welcome!</span> We Made Delicious Food for You
+            </h1>
+            <p class="p text-[20px] pt-[10] pb-10 md:pr-[142px]">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <button class="">Order Online</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================
+              Bannar Section End
+     ======================================= -->
+
+      <!-- ===================================
+              Best Food Maker Section Start
+     ======================================= -->
+      <section>
+        <div class="container">
+          <div class="text-center lg:pb-[70px]">
+            <h2 class="mb-4">Why We are Best Food Maker</h2>
+            <p class=" text-[14px] leading-[24px] pb-5 lg:px-[90px]">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem scrambled it to make a type specimen book.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-6 md:gap-[87px]">
+            <div class="best_food_p">
+              <p class="text-[14px] font-normal leading-[24px] text-center md:text-lg md:leading-[30px] md:text-left">
+                It is a long established fact that a reader will be distracted
+                layout. The point of using Lorem Ipsum is that it has a
+                more-or-less normal distribution of letters, as opposed to using
+                English. Many desktop publishing packages and web page editors
+                now use Lorem Ipsum as their default model text, and a search
+                for 'lorem ipsum' will uncover many web sites still in their
+                infancy. Various versions have evolved over the years, sometimes
+                by accident, sometimes on purpose It is a long established fact
+                that a reader will be distracted by the readable content of a
+                page when looking at its layout. The normal distribution of
+                letters, as opposed to using 'Content Many desktop publishing
+                packages and web page editors search for 'lorem ipsum' will
+                uncover many web sites still in humour and the like.
+                <span class="font-bold">Read More</span>
+              </p>
+            </div>
+            <div class=" relative">
+              <a href="#" class="w-full">
+                <img class="rounded-[12px]" src="./image/Video.jpg" alt="image"/>
+              </a>
+              <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <a  class="video-play-button" href="#">
+                  <span></span>
+                 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===================================
+             Best Food Maker Section End
+     ======================================= -->
+
+      <!-- ===================================
+             Delicious Menu Section Start
+     ======================================= -->
+     <section>
+      <div class="container">
+        <div class=" text-center pb-[10px]">
+          <h2 class="md:pb-10">Our Best & Delicious Menu </h2>
+          <div class="text-black dark:text-white overflow-x-scroll pb-3 mb-10">
+            <ul class="flex lg:justify-between items-center gap-10 py-2 ">
+              <li class="text-base leading-7 text-nowrap object-fit-cover px-5 py-2 hover:border-b-4  border-b-4 border-transparent rounded-2xl hover:border-white ease-linear duration-300 cursor-pointer">All</li>
+              <li class="text-base leading-7 text-nowrap object-fit-cover px-5 py-2 hover:border-b-4 border-b-4 border-transparent rounded-2xl hover:border-white ease-linear duration-300 cursor-pointer">Bread</li>
+              <li class="text-base leading-7 text-nowrap object-fit-cover px-5 py-2 hover:border-b-4 border-b-4 border-transparent rounded-2xl hover:border-white ease-linear duration-300 cursor-pointer">Chiffon & Rolls</li>
+              <li class="text-base leading-7 text-nowrap object-fit-cover px-5 py-2 hover:border-b-4 border-b-4 border-transparent rounded-2xl hover:border-white ease-linear duration-300 cursor-pointer">Donut</li>
+              <li class="text-base leading-7 text-nowrap object-fit-cover px-5 py-2 hover:border-b-4 border-b-4 border-transparent rounded-2xl hover:border-white ease-linear duration-300 cursor-pointer">Pastry & Danish</li>
+              <li class="text-base leading-7 text-nowrap object-fit-cover px-5 py-2 hover:border-b-4 border-b-4 border-transparent rounded-2xl hover:border-white ease-linear duration-300 cursor-pointer">Cakes</li>
+              <li class="text-base leading-7 text-nowrap object-fit-cover px-5 py-2 hover:border-b-4 border-b-4 border-transparent rounded-2xl hover:border-white ease-linear duration-300 cursor-pointer">Cookies</li>
+            </ul>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="p-5 bg-[#191919] rounded-[12px] cursor-pointer">
+              <img class=" hover:scale-[1.3] hover:rotate-[-25deg] ease-in-out duration-500" src="./image/Naan-Burger.png" alt="image">
+              <h3 class="text-xl font-bold leading-[30px] text-left pt-5 pb-2">Naan Burger</h3>
+              <p class="text-sm leading-[24px] text-left pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <div class="flex justify-between items-center">
+                <h4 class="text-2xl font-bold leading-[34px]">$1.85</h4>
+                <span class="w-10 h-10 border-solid border-2 border-white rounded-full flex justify-center items-center">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.66675 1.66675H3.11675C4.01675 1.66675 4.72508 2.44175 4.65008 3.33341L3.95841 11.6334C3.84175 12.9917 4.91674 14.1584 6.28341 14.1584H15.1584C16.3584 14.1584 17.4084 13.1751 17.5001 11.9834L17.9501 5.73342C18.0501 4.35009 17.0001 3.22508 15.6084 3.22508H4.85009" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.5417 18.3333C14.117 18.3333 14.5833 17.867 14.5833 17.2917C14.5833 16.7164 14.117 16.25 13.5417 16.25C12.9664 16.25 12.5 16.7164 12.5 17.2917C12.5 17.867 12.9664 18.3333 13.5417 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.87492 18.3333C7.45021 18.3333 7.91658 17.867 7.91658 17.2917C7.91658 16.7164 7.45021 16.25 6.87492 16.25C6.29962 16.25 5.83325 16.7164 5.83325 17.2917C5.83325 17.867 6.29962 18.3333 6.87492 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.5 6.66675H17.5" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+              </div>
+            </div>
+            <div class="p-5 bg-[#191919] rounded-[12px] cursor-pointer">
+              <img class=" hover:scale-[1.3] hover:rotate-[-30deg] ease-in-out duration-500 overflow-hidden" src="./image/Butter-Chicken-Taco.png" alt="image">
+              <h3 class="text-xl font-bold leading-[30px] text-left pt-5 pb-2">Butter Chicken Taco</h3>
+              <p class="text-sm leading-[24px] text-left pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <div class="flex justify-between items-center">
+                <h4 class="text-2xl font-bold leading-[34px]">$1.15</h4>
+                <span class="w-10 h-10 border-solid border-2 border-white rounded-full flex justify-center items-center">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.66675 1.66675H3.11675C4.01675 1.66675 4.72508 2.44175 4.65008 3.33341L3.95841 11.6334C3.84175 12.9917 4.91674 14.1584 6.28341 14.1584H15.1584C16.3584 14.1584 17.4084 13.1751 17.5001 11.9834L17.9501 5.73342C18.0501 4.35009 17.0001 3.22508 15.6084 3.22508H4.85009" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.5417 18.3333C14.117 18.3333 14.5833 17.867 14.5833 17.2917C14.5833 16.7164 14.117 16.25 13.5417 16.25C12.9664 16.25 12.5 16.7164 12.5 17.2917C12.5 17.867 12.9664 18.3333 13.5417 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.87492 18.3333C7.45021 18.3333 7.91658 17.867 7.91658 17.2917C7.91658 16.7164 7.45021 16.25 6.87492 16.25C6.29962 16.25 5.83325 16.7164 5.83325 17.2917C5.83325 17.867 6.29962 18.3333 6.87492 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.5 6.66675H17.5" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+              </div>
+            </div>
+            <div class="p-5 bg-[#191919] rounded-[12px] cursor-pointer">
+              <img class=" hover:scale-[1.3] hover:rotate-[15deg] ease-in-out duration-500 overflow-hidden" src="./image/Chicken-Burger.png" alt="image">
+              <h3 class="text-xl font-bold leading-[30px] text-left pt-5 pb-2">Chicken Burger</h3>
+              <p class="text-sm leading-[24px] text-left pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <div class="flex justify-between items-center">
+                <h4 class="text-2xl font-bold leading-[34px]">$2.00</h4>
+                <span class="w-10 h-10 border-solid border-2 border-white rounded-full flex justify-center items-center">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.66675 1.66675H3.11675C4.01675 1.66675 4.72508 2.44175 4.65008 3.33341L3.95841 11.6334C3.84175 12.9917 4.91674 14.1584 6.28341 14.1584H15.1584C16.3584 14.1584 17.4084 13.1751 17.5001 11.9834L17.9501 5.73342C18.0501 4.35009 17.0001 3.22508 15.6084 3.22508H4.85009" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.5417 18.3333C14.117 18.3333 14.5833 17.867 14.5833 17.2917C14.5833 16.7164 14.117 16.25 13.5417 16.25C12.9664 16.25 12.5 16.7164 12.5 17.2917C12.5 17.867 12.9664 18.3333 13.5417 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.87492 18.3333C7.45021 18.3333 7.91658 17.867 7.91658 17.2917C7.91658 16.7164 7.45021 16.25 6.87492 16.25C6.29962 16.25 5.83325 16.7164 5.83325 17.2917C5.83325 17.867 6.29962 18.3333 6.87492 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.5 6.66675H17.5" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+              </div>
+            </div>
+            <div class="p-5 bg-[#191919] rounded-[12px] cursor-pointer">
+              <img class=" hover:scale-[1.2] hover:rotate-[-45deg] ease-in-out duration-500 overflow-hidden" src="./image/Cheese-Chicken-Naan.png" alt="image">
+              <h3 class="text-xl font-bold leading-[30px] text-left pt-5 pb-2">Cheese Chicken Naan</h3>
+              <p class="text-sm leading-[24px] text-left pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <div class="flex justify-between items-center">
+                <h4 class="text-2xl font-bold leading-[34px]">$2.50</h4>
+                <span class="w-10 h-10 border-solid border-2 border-white rounded-full flex justify-center items-center">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.66675 1.66675H3.11675C4.01675 1.66675 4.72508 2.44175 4.65008 3.33341L3.95841 11.6334C3.84175 12.9917 4.91674 14.1584 6.28341 14.1584H15.1584C16.3584 14.1584 17.4084 13.1751 17.5001 11.9834L17.9501 5.73342C18.0501 4.35009 17.0001 3.22508 15.6084 3.22508H4.85009" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.5417 18.3333C14.117 18.3333 14.5833 17.867 14.5833 17.2917C14.5833 16.7164 14.117 16.25 13.5417 16.25C12.9664 16.25 12.5 16.7164 12.5 17.2917C12.5 17.867 12.9664 18.3333 13.5417 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.87492 18.3333C7.45021 18.3333 7.91658 17.867 7.91658 17.2917C7.91658 16.7164 7.45021 16.25 6.87492 16.25C6.29962 16.25 5.83325 16.7164 5.83325 17.2917C5.83325 17.867 6.29962 18.3333 6.87492 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.5 6.66675H17.5" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+              </div>
+            </div>
+            <div class="p-5 bg-[#191919] rounded-[12px] cursor-pointer">
+              <img class=" hover:scale-[1.3] hover:rotate-[45deg] ease-in-out duration-500 overflow-hidden" src="./image/3-Layer-Burger.png" alt="image">
+              <h3 class="text-xl font-bold leading-[30px] text-left pt-5 pb-2">3 Layer Burger</h3>
+              <p class="text-sm leading-[24px] text-left pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <div class="flex justify-between items-center">
+                <h4 class="text-2xl font-bold leading-[34px]">$4.99</h4>
+                <span class="w-10 h-10 border-solid border-2 border-white rounded-full flex justify-center items-center">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.66675 1.66675H3.11675C4.01675 1.66675 4.72508 2.44175 4.65008 3.33341L3.95841 11.6334C3.84175 12.9917 4.91674 14.1584 6.28341 14.1584H15.1584C16.3584 14.1584 17.4084 13.1751 17.5001 11.9834L17.9501 5.73342C18.0501 4.35009 17.0001 3.22508 15.6084 3.22508H4.85009" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.5417 18.3333C14.117 18.3333 14.5833 17.867 14.5833 17.2917C14.5833 16.7164 14.117 16.25 13.5417 16.25C12.9664 16.25 12.5 16.7164 12.5 17.2917C12.5 17.867 12.9664 18.3333 13.5417 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.87492 18.3333C7.45021 18.3333 7.91658 17.867 7.91658 17.2917C7.91658 16.7164 7.45021 16.25 6.87492 16.25C6.29962 16.25 5.83325 16.7164 5.83325 17.2917C5.83325 17.867 6.29962 18.3333 6.87492 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.5 6.66675H17.5" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+              </div>
+            </div>
+            <div class="p-5 bg-[#191919] rounded-[12px] cursor-pointer">
+              <img class=" hover:scale-[1.3] hover:rotate-[45deg] ease-in-out duration-500 overflow-hidden" src="./image/Sandwich.png" alt="image">
+              <h3 class="text-xl font-bold leading-[30px] text-left pt-5 pb-2">Sandwich</h3>
+              <p class="text-sm leading-[24px] text-left pb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <div class="flex justify-between items-center">
+                <h4 class="text-2xl font-bold leading-[34px]">$2.80</h4>
+                <span class="w-10 h-10 border-solid border-2 border-white rounded-full flex justify-center items-center">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.66675 1.66675H3.11675C4.01675 1.66675 4.72508 2.44175 4.65008 3.33341L3.95841 11.6334C3.84175 12.9917 4.91674 14.1584 6.28341 14.1584H15.1584C16.3584 14.1584 17.4084 13.1751 17.5001 11.9834L17.9501 5.73342C18.0501 4.35009 17.0001 3.22508 15.6084 3.22508H4.85009" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.5417 18.3333C14.117 18.3333 14.5833 17.867 14.5833 17.2917C14.5833 16.7164 14.117 16.25 13.5417 16.25C12.9664 16.25 12.5 16.7164 12.5 17.2917C12.5 17.867 12.9664 18.3333 13.5417 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.87492 18.3333C7.45021 18.3333 7.91658 17.867 7.91658 17.2917C7.91658 16.7164 7.45021 16.25 6.87492 16.25C6.29962 16.25 5.83325 16.7164 5.83325 17.2917C5.83325 17.867 6.29962 18.3333 6.87492 18.3333Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.5 6.66675H17.5" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+          <button class="mt-10">See All</button>
+        </div>
+      </div>
+     </section>
+      <!-- ===================================
+             Delicious Menu Section End
+     ======================================= -->
+
+      <!-- ===================================
+             Quality Food Section Start
+     ===================================== -->
+     <section>
+      <div class="container">
+        <div class="pb-10 md:pb-[60px] text-center">
+          <h2 class="md:text-[44px] md:font-semibold md:leading-[60px]">We believe in making quality food</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-[30px]">
+          <div class="text-center">
+            <h3 class="text-[46px] font-bold leading-[56px] pb-2">2M+</h3>
+            <p class="text-[14px] leading-[26px] font-normal">Happy Customers</p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-[46px] font-bold leading-[56px] pb-2 ">98%</h3>
+            <p class="text-[14px] leading-[26px] font-normal">Customer Satisfaction</p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-[46px] font-bold leading-[56px] pb-2 ">20+</h3>
+            <p class="text-[14px] leading-[26px] font-normal">Our Branches </p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-[46px] font-bold leading-[56px] pb-2 ">100+</h3>
+            <p class="text-[14px] leading-[26px] font-normal">Total Employees </p>
+          </div>
+        </div>
+      </div>
+     </section>
+      <!-- =================================
+             Quality Food Section End
+     ======================================= -->
+     
+
+      <!-- =================================
+            Franchisee Food Section Start
+     ======================================= -->
+     <section>
+      <div class="container">
+        <div class="text-center">
+          <h2 class="md:font-semibold md:w-[911px] md:mx-auto md:px-5">Start The Adventure Today And Become a Franchisee</h2>
+          <div class="pt-5 pb-[30px] text-center md:pb-[60px]">
+            <p class="text-[14px] leading-[26px] font-normal md:px-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+          <button>Become a Franchisee</button>
+        </div>
+      </div>
+     </section>
+      <!-- =================================
+          Franchisee Food Section End
+     ======================================= -->
+
+
+      <!-- =================================
+          Our Clients Are Saying Section End
+     ======================================= -->
+     <section class="pb-[90px]">
+      <div class="container">
+        <div class="text-center pb-[30px] md:pb-[70px]">
+          <h2>What Our Clients Are Saying</h2>
+        </div>
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+          <div class=" px-5 py-[30px] bg-[#191919] rounded-xl">
+             <div class="grid grid-cols-[auto_1fr] gap-3 pb-5">
+              <div class="">
+                <img src="./image/Michal-Gun.png" alt="image">
+              </div>
+              <div class="">
+                <h4 class="text-[18px] font-bold leading-[28px]">Michal Gun</h4>
+                <p class="text-sm leading-[22px]">Head of sales at Tesla</p>
+                <span class="text-[#FF9901] text-xs">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+            </div>
+            <svg width="214" height="19" viewBox="0 0 214 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.0143 0L24 3.54945C19.2344 4.38462 18.9256 8.35165 19.3668 10.2308H23.5587V19H14.2924C14.0717 17.8864 13.7629 14.2396 14.2924 8.56044C14.8219 2.88132 19.661 0.487179 22.0143 0Z" fill="white"/>
+              <path d="M8.01435 0L10 3.54945C5.23444 4.38462 4.92556 8.35165 5.36681 10.2308H9.55874V19H0.292368C0.0717403 17.8864 -0.237139 14.2396 0.292368 8.56044C0.821876 2.88132 5.66098 0.487179 8.01435 0Z" fill="white"/>
+              <line x1="19" y1="14.5" x2="214" y2="14.5" stroke="white" stroke-opacity="0.2"/>
+              </svg>
+               <p class="text-sm font-medium leading-[24px] pt-5">There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+          </div>
+          <div class=" px-5 py-[30px] bg-[#191919] rounded-xl">
+             <div class="grid grid-cols-[auto_1fr] gap-3 pb-5">
+              <div class="">
+                <img src="./image/Aleena-White.png" alt="image">
+              </div>
+              <div class="">
+                <h4 class="text-[18px] font-bold leading-[28px]">Aleena White</h4>
+                <p class="text-sm leading-[22px]">Accountant of Ozone</p>
+                <span class="text-[#FF9901] text-xs">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+            </div>
+            <svg width="214" height="19" viewBox="0 0 214 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.0143 0L24 3.54945C19.2344 4.38462 18.9256 8.35165 19.3668 10.2308H23.5587V19H14.2924C14.0717 17.8864 13.7629 14.2396 14.2924 8.56044C14.8219 2.88132 19.661 0.487179 22.0143 0Z" fill="white"/>
+              <path d="M8.01435 0L10 3.54945C5.23444 4.38462 4.92556 8.35165 5.36681 10.2308H9.55874V19H0.292368C0.0717403 17.8864 -0.237139 14.2396 0.292368 8.56044C0.821876 2.88132 5.66098 0.487179 8.01435 0Z" fill="white"/>
+              <line x1="19" y1="14.5" x2="214" y2="14.5" stroke="white" stroke-opacity="0.2"/>
+              </svg>
+               <p class="text-sm font-medium leading-[24px] pt-5">There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+          </div>
+          <div class=" px-5 py-[30px] bg-[#191919] rounded-xl">
+             <div class="grid grid-cols-[auto_1fr] gap-3 pb-5">
+              <div class="">
+                <img src="./image/Cries-Lee.png" alt="image">
+              </div>
+              <div class="">
+                <h4 class="text-[18px] font-bold leading-[28px]">Cries Lee</h4>
+                <p class="text-sm leading-[22px]">CEO Of Montee</p>
+                <span class="text-[#FF9901] text-xs">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+            </div>
+            <svg width="214" height="19" viewBox="0 0 214 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.0143 0L24 3.54945C19.2344 4.38462 18.9256 8.35165 19.3668 10.2308H23.5587V19H14.2924C14.0717 17.8864 13.7629 14.2396 14.2924 8.56044C14.8219 2.88132 19.661 0.487179 22.0143 0Z" fill="white"/>
+              <path d="M8.01435 0L10 3.54945C5.23444 4.38462 4.92556 8.35165 5.36681 10.2308H9.55874V19H0.292368C0.0717403 17.8864 -0.237139 14.2396 0.292368 8.56044C0.821876 2.88132 5.66098 0.487179 8.01435 0Z" fill="white"/>
+              <line x1="19" y1="14.5" x2="214" y2="14.5" stroke="white" stroke-opacity="0.2"/>
+              </svg>
+               <p class="text-sm font-medium leading-[24px] pt-5">There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+          </div>
+          <div class=" px-5 py-[30px] bg-[#191919] rounded-xl">
+             <div class="grid grid-cols-[auto_1fr] gap-3 pb-5">
+              <div class="">
+                <img src="./image/Michal-Gun.png" alt="image">
+              </div>
+              <div class="">
+                <h4 class="text-[18px] font-bold leading-[28px]">Michal Gun</h4>
+                <p class="text-sm leading-[22px]">Head of sales at Tesla</p>
+                <span class="text-[#FF9901] text-xs">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+            </div>
+            <svg width="214" height="19" viewBox="0 0 214 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.0143 0L24 3.54945C19.2344 4.38462 18.9256 8.35165 19.3668 10.2308H23.5587V19H14.2924C14.0717 17.8864 13.7629 14.2396 14.2924 8.56044C14.8219 2.88132 19.661 0.487179 22.0143 0Z" fill="white"/>
+              <path d="M8.01435 0L10 3.54945C5.23444 4.38462 4.92556 8.35165 5.36681 10.2308H9.55874V19H0.292368C0.0717403 17.8864 -0.237139 14.2396 0.292368 8.56044C0.821876 2.88132 5.66098 0.487179 8.01435 0Z" fill="white"/>
+              <line x1="19" y1="14.5" x2="214" y2="14.5" stroke="white" stroke-opacity="0.2"/>
+              </svg>
+               <p class="text-sm font-medium leading-[24px] pt-5">There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+          </div>
+          <div class=" px-5 py-[30px] bg-[#191919] rounded-xl">
+             <div class="grid grid-cols-[auto_1fr] gap-3 pb-5">
+              <div class="">
+                <img src="./image/Michal-Gun.png" alt="image">
+              </div>
+              <div class="">
+                <h4 class="text-[18px] font-bold leading-[28px]">Michal Gun</h4>
+                <p class="text-sm leading-[22px]">Head of sales at Tesla</p>
+                <span class="text-[#FF9901] text-xs">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+            </div>
+            <svg width="214" height="19" viewBox="0 0 214 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.0143 0L24 3.54945C19.2344 4.38462 18.9256 8.35165 19.3668 10.2308H23.5587V19H14.2924C14.0717 17.8864 13.7629 14.2396 14.2924 8.56044C14.8219 2.88132 19.661 0.487179 22.0143 0Z" fill="white"/>
+              <path d="M8.01435 0L10 3.54945C5.23444 4.38462 4.92556 8.35165 5.36681 10.2308H9.55874V19H0.292368C0.0717403 17.8864 -0.237139 14.2396 0.292368 8.56044C0.821876 2.88132 5.66098 0.487179 8.01435 0Z" fill="white"/>
+              <line x1="19" y1="14.5" x2="214" y2="14.5" stroke="white" stroke-opacity="0.2"/>
+              </svg>
+               <p class="text-sm font-medium leading-[24px] pt-5">There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+          </div>
+          <div class=" px-5 py-[30px] bg-[#191919] rounded-xl">
+             <div class="grid grid-cols-[auto_1fr] gap-3 pb-5">
+              <div class="">
+                <img src="./image/Michal-Gun.png" alt="image">
+              </div>
+              <div class="">
+                <h4 class="text-[18px] font-bold leading-[28px]">Michal Gun</h4>
+                <p class="text-sm leading-[22px]">Head of sales at Tesla</p>
+                <span class="text-[#FF9901] text-xs">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+            </div>
+            <svg width="214" height="19" viewBox="0 0 214 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.0143 0L24 3.54945C19.2344 4.38462 18.9256 8.35165 19.3668 10.2308H23.5587V19H14.2924C14.0717 17.8864 13.7629 14.2396 14.2924 8.56044C14.8219 2.88132 19.661 0.487179 22.0143 0Z" fill="white"/>
+              <path d="M8.01435 0L10 3.54945C5.23444 4.38462 4.92556 8.35165 5.36681 10.2308H9.55874V19H0.292368C0.0717403 17.8864 -0.237139 14.2396 0.292368 8.56044C0.821876 2.88132 5.66098 0.487179 8.01435 0Z" fill="white"/>
+              <line x1="19" y1="14.5" x2="214" y2="14.5" stroke="white" stroke-opacity="0.2"/>
+              </svg>
+               <p class="text-sm font-medium leading-[24px] pt-5">There are many variatioof passages of Lorem Ipsum ava but the majority If you are going to use a passage of Lorem Ipsum, you need tasure there isn't anything embarrassinhidden in believable.</p>
+          </div>
+         </div> 
+      </div>
+     </section>
+      <!-- =================================
+          Our Clients Are Saying Section End
+     ======================================= -->
+
+
+      <!-- =================================
+                Support Section End
+     ======================================= -->
+     <section class="dark:bg-white bg-white  pt-10 pb-10 ">
+      <div class="container">
+        <div class="text-center pb-[30px] md:pb-[50px]">
+          <h2 class="text-3xl font-bold leading-[50px] text-black md:text-[70px] md:font-bold md:leading-[90px]">For more Support</h2>
+        </div>
+        <div class=" grid md:grid-cols-[auto_auto] gap-5">
+          <div class="mb-5 md:flex md:justify-end">
+            <form action="#" class="text-center w-full md:w-1/2  border-2 border-black rounded-full py-5 ">
+              <input type="email" placeholder="Enter Email" class=" font-bold text-lg outline-none">
+            </form>
+          </div>
+          <button class="text-white bg-black w-full md:w-1/2">Subscribe</button>
+        </div>
+      </div>
+     </section>
+      <!-- =================================
+                Support Section End
+     ======================================= -->
+
+      <!-- =================================
+          Our Restaurants Section End
+     ======================================= -->
+     <section>
+      <div class="container">
+        <div class="grid md:grid-cols-2 md:gap-[145px]">
+          <div class="pb-[60px] md:pt-[43px]">
+            <h2 class="pb-4">Our Restaurants. Where to Find Us?</h2>
+            <p class="text-sm leading-[24px] pb-[30px] md:text-[20px] md:leading-[30px] md:pb-[70px]">Want to have a superb meal in an exceptional setting with family, friends or work colleagues, here are the addresses of our restaurants.</p>
+            <button class="text-base font-semibold leading-[26px]  ">Find The Nearest Cheffest</button>
+          </div>
+          <div class="pb-[90px]">
+            <img class=" rounded-xl" src="./image/MAP.png" alt="image">
+          </div>
+        </div>
+      </div>
+     </section>
+      <!-- =================================
+          Our Restaurants Section End
+     ======================================= -->
+
+      <!-- =================================
+          Footer Section End
+     ======================================= -->
+     <footer class="bg-[#191919] pt-[80px] pb-10">
+      <div class="container">
+           <div class="grid md:grid-cols-4 md:gap-[103px] mb-[30px] border-b-2 border-[#4F4F4F]">
+            <div class=" pb-[36px]">
+              <h4 class="text-2xl font-semibold leading-[24px] pb-[30px]">Our Products</h4>
+              <ul class="text-white">
+                <li class="pb-6 text-lg leading-[18px]">
+                  <a href="#">Our menus</a>
+                </li>
+                <li class="pb-6 text-lg leading-[18px]">
+                  <a href="#">Our burgers</a>
+                </li>
+                <li class="pb-6 text-lg leading-[18px]">
+                  <a href="#">Our times sides</a>
+                </li>
+                <li class="pb-6 text-lg leading-[18px]">
+                  <a href="#">Our naandwiches</a>
+                </li>
+              </ul>
+            </div>
+            <div class=" pb-[60px]">
+              <h4 class="text-2xl font-semibold leading-[24px] pb-[30px]">legal information</h4>
+              <ul class="text-white">
+                <li class="text-lg leading-[18px]">
+                  <a href="#">Legal Notice</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pb-[34px]">
+              <h4 class="text-2xl font-semibold leading-[24px] pb-[30px]">Contact us</h4>
+              <ul class="text-white">
+                <li class="pb-6 text-lg leading-[18px]">
+                  <a href="#">Contacts</a>
+                </li>
+                <li class="pb-6 text-lg leading-[18px]">
+                  <a href="#">Our addresses</a>
+                </li>
+                <li class="pb-6 text-lg leading-[18px]">
+                  <a href="#">Become a Times Square franchisee</a>
+                </li>
+              </ul>
+            </div>
+            <div class=" pb-[60px]">
+              <h4 class="text-2xl font-semibold leading-[24px] pb-[30px]">We accept</h4>
+              <span class=" flex gap-5 pb-[30px]">
+                <img src="./image/Mastercard.svg" alt="image">
+                <img src="./image/Visa.svg" alt="image">
+              </span>
+              <span>
+                <img src="./image/American-express.png" alt="image">
+              </span>
+            </div>
+           </div>
+           <div class=" md:flex md:justify-between">
+            <span class="text-white text-4xl flex justify-center gap-5">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-reddit-alien"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </span>
+            <span>
+              <p class="md:pt-0 pt-[30px] text-center text-lg font-semibold">Copyright © 2024 - Redwan Labib</p>
+            </span>
+           </div>
+      </div>
+     </footer>
+      <!-- =================================
+          Footer Section End
+     ======================================= -->
+    </main>
+  </body>
+</html>
