@@ -903,6 +903,10 @@ section{
   height: 2rem;
 }
 
+.h-\[470px\]{
+  height: 470px;
+}
+
 .h-\[60px\]{
   height: 60px;
 }
@@ -921,6 +925,10 @@ section{
 
 .w-8{
   width: 2rem;
+}
+
+.w-\[100\%\]{
+  width: 100%;
 }
 
 .w-\[60px\]{
@@ -1676,6 +1684,12 @@ section{
 
   .lg\:pb-\[70px\]{
     padding-bottom: 70px;
+  }
+}
+
+@media (min-width: 1202px){
+  .xl\:w-\[483px\]{
+    width: 483px;
   }
 }
 
